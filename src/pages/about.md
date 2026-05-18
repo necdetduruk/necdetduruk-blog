@@ -3,35 +3,17 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+I'm Necdet Duruk, a Senior ML Engineer based in Mississauga, Ontario.
 
-![Astro Paper](public/astropaper-og.jpg)
+For the past six years I've built production machine learning systems for time-series problems — anomaly detection on telecom network telemetry, forecasting, real-time scoring pipelines. The work runs at scale on data that doesn't behave the way textbook datasets do, which has shaped most of how I think about ML.
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+I write here about the parts of ML engineering that don't get enough attention: rigorous evaluation, the gap between published benchmarks and production reality, foundation models meeting traditional time-series workloads, and the engineering practices that separate projects that ship from ones that don't.
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+## What I'm working on
 
-## Features
+- Benchmarking time-series foundation models — Chronos, TimesFM, Moment — against well-tuned classical baselines on real production telemetry. The project is [public and active on GitHub](https://github.com/necdetduruk/tsfm-anomaly-bench).
+- Writing up findings as they come in. [Part 1 is live](/posts/why-im-benchmarking-time-series-foundation-models); part 2 (foundation models) is in progress.
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+## Contact
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
-
-and so much more.
-
-## Show your support
-
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
-
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
-
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+Best way to reach me is [LinkedIn](https://www.linkedin.com/in/necdetduruk/). My code is on [GitHub](https://github.com/necdetduruk).
