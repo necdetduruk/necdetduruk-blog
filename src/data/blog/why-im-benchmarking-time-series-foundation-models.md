@@ -15,7 +15,7 @@ description: A rigorous comparison of time-series foundation models against a we
 
 When a time-series foundation model claims state-of-the-art on anomaly detection, my first question is: *against what?* Recent papers comparing Chronos, TimesFM, and Moment to "baselines" often run those baselines half-tuned, on cherry-picked datasets, with metrics that paper over the model's actual behavior.
 
-I've spent six years building anomaly detection systems for telecom network telemetry. From inside that world, the gap between published benchmarks and production reality is wide enough to drive a truck through. So I'm running my own benchmark — rigorous, public, reproducible — to ask the question carefully: **on a standard multivariate anomaly detection dataset, do time-series foundation models actually outperform a well-tuned classical baseline?**
+I've spent six years building production time-series ML systems end-to-end — data pipelines, infrastructure, and forecasting models for workforce capacity planning across multiple business units. From that vantage, the gap between published benchmarks and production reality is wide enough to drive a truck through. So I'm running my own benchmark — rigorous, public, reproducible — to ask the question carefully: **on a standard multivariate anomaly detection dataset, do time-series foundation models actually outperform a well-tuned classical baseline?**
 
 This is part 1. It covers the setup, the dataset choice, the metric problem, and the first baseline. Part 2 will run the foundation models.
 
@@ -37,7 +37,7 @@ Before adopting any of these models for production telemetry work, I want to see
 
 The Server Machine Dataset (Su et al., KDD 2019) is the right dataset for this question. It's real production telemetry from 28 servers at a large internet company, sampled every minute for roughly five weeks each. 38 anonymized metrics per machine, expert-labeled anomalies in the test split. It's been used in nearly every major time-series anomaly detection paper since 2019, which means published baselines are dense and reproducible.
 
-It's also structurally similar to what I work with daily — multivariate operational telemetry, looking for incidents in time. The patterns SMD requires a model to learn are the same patterns telecom telemetry requires.
+It's also a methodologically clean choice — multivariate time-series at production scale, with strong literature baselines available for rigorous comparison. I work with multivariate time-series daily in a different problem domain (forecasting, not detection), which gives me strong intuitions about what a credible classical baseline should look like even when the application differs.
 
 The flip side: SMD has known limitations. Features are anonymized, so no domain feature engineering. Some labels in test are debatable. Training data is assumed clean but probably contains undetected anomalies. And the benchmark is old enough that some recent papers have started overfitting to it through evaluation tricks — which brings us to the metric problem.
 
