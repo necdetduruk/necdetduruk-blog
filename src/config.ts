@@ -1,5 +1,5 @@
 export const SITE = {
-  website: "https://necdetduruk.dev",  // or .com — placeholder for now
+  website: "https://necdetduruk.com",
   author: "Necdet Duruk",
   profile: "https://www.linkedin.com/in/necdetduruk/",
   desc: "Senior ML Engineer writing about time-series, foundation models, and production ML.",
