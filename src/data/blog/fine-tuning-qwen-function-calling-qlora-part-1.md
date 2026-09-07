@@ -3,7 +3,7 @@ title: "Fine-tuning Qwen2.5-1.5B for function calling with QLoRA: what the basel
 author: Necdet Duruk
 pubDatetime: 2026-09-07T12:00:00Z
 slug: fine-tuning-qwen-function-calling-qlora-part-1
-featured: false
+featured: true
 draft: false
 tags:
   - llm
