@@ -1,7 +1,7 @@
 ---
 title: "Fine-tuning Qwen2.5-1.5B for function calling with QLoRA: what the baseline already gets right (Part 1)"
 author: Necdet Duruk
-pubDatetime: 2026-09-07T12:00:00Z
+pubDatetime: 2026-09-06T22:00:00Z
 slug: fine-tuning-qwen-function-calling-qlora-part-1
 featured: true
 draft: false
